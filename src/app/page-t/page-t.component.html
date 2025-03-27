@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="container">
+    <div class="card">
+      <div class="hora">{{ hora }}</div>
+      <div class="top-section">
+        <h2 class="temp">28{{ temp }}°C</h2>
+        <app-circle></app-circle>
+      </div>
+      <div class="info">
+        <h2 class="name">pablo{{ name }}</h2>
+        <h2 class="status">Temperatura{{ status }}</h2>
+      </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

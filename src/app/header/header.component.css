@@ -1,0 +1,82 @@
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px; /* Ajusta la altura si es necesario */
+    padding: 20px;
+    background-color: white; /* Fondo blanco */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    position: fixed; /* Mantiene el header fijo en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil */
+}
+/* Contenedor de los elementos (etiquetas) en fila */
+.components {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos de manera equitativa */
+    align-items: center; /* Alinea los elementos verticalmente */
+    width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible */
+    gap: 20px; /* Espacio entre los elementos */
+    position: relative; /* Permite controlar el z-index */
+    z-index: 5; /* Prioridad sobre app-menu */
+}
+
+/* Estilos para app-menu */
+app-menu {
+    position: absolute; /* Si es un menú flotante, ajustar la posición */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4; /* Asegura que no cubra "WarmHeart" */
+}
+
+/* Cada uno de los div con clase "etiqueta" */
+.etiqueta {
+    display: flex;
+    flex-direction: column; /* Los elementos dentro de cada etiqueta estarán en columna */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 50px; /* Define un ancho fijo para cada etiqueta */
+}
+
+/* Estilos para los botones */
+button {
+    padding: 10px;
+    background-color: #EC044B;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a61d1d;
+}
+
+/* Ajuste de la etiqueta "WarmHeart" */
+.etiquetawarmheart {
+    position: relative;
+    z-index: 10; /* Asegura que esté por encima de app-menu */
+    margin-right: 380px; /* Aumenta la separación a la derecha */
+    text-align: center;
+}
+
+.etiquetawarmheart p{
+    color: gray;
+}
+
+/* Hace que los enlaces sean negros por defecto */
+.etiqueta a {
+    color: black;
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    font-weight: bold; /* Opcional, si quieres que se vean más gruesos */
+    transition: color 0.3s ease-in-out; /* Efecto suave al cambiar de color */
+}
+
+/* Cambia el color a rojo cuando el cursor pasa por encima */
+.etiqueta a:hover {
+    color: red;
+}

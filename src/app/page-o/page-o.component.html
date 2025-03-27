@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="container">
+    <div class="card">
+      <div class="hora">{{ hora }}</div>
+      <div class="top-section">
+        <img src="/src/assets/oximetro.png" alt="Oxímetro">
+        <h2 class="temp">28{{ Oxigenacion }}°C</h2>
+      </div>
+      <div class="info">
+        <h2 class="name">pablo{{ nombre }}</h2>
+        <h2 class="status">Oxigenación{{ status }}</h2>
+      </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,82 @@
+/* Contenedor principal para centrar la card */
+.container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 90vh; /* Altura completa de la pantalla */
+  } 
+  /* Estilos de la tarjeta */
+  .card {
+    width: 750px;
+    height: 450px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+  /* Sección superior (centra los elementos dentro) */
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; /* Centra verticalmente */
+    flex-grow: 1;
+}
+
+  /* Asegura que `app-page-r` no tenga margen extra */
+  app-page-r {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Texto de temperatura */
+  .temp {
+    font-size: 32px;
+    color: #232121;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  /* Sección inferior izquierda */
+  .info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Agrega espacio entre los elementos */
+  }
+
+  /* Estilo para el nombre */
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2A2A2A;
+    margin: 0;
+  }
+
+  /* Estilo para el estado */
+  .status {
+    font-size: 16px;
+    color: #0C538C;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hora {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+}

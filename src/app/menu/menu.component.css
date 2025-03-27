@@ -1,0 +1,58 @@
+/* Estilo del contenedor del menú */
+.menu-container {
+    position: fixed;   /* Fija el menú en la pantalla */
+    top: 0;
+    left: 0;           /* El menú está del lado izquierdo */
+    width: 100px;       /* Ancho del menú cuando está cerrado */
+    height: 100%;
+    background-color: #0C538C;
+    color: white;
+    padding-top: 20px;
+    transition: width 0.3s ease; /* Transición suave para el ancho */
+    overflow: hidden;  /* Para evitar que el contenido sobresalga cuando está cerrado */
+  }
+  
+  /* Cuando el menú está abierto, aumenta su ancho */
+  .menu-container.open {
+    width: 250px; /* Aumenta el ancho del menú cuando se abre */
+  }
+  
+  /* Estilo del botón que activa el menú */
+  .menu-button {
+    background-color: #0C538C;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* El botón ocupa todo el ancho disponible */
+  }
+  
+  /* Estilo del contenido del menú */
+  .menu-content {
+    display: none;  /* Por defecto, el menú está oculto */
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 20px;
+    transition: opacity 0.3s ease;  /* Transición de visibilidad suave */
+  }
+  
+  /* Mostrar el menú cuando se le aplica la clase 'show' */
+  .menu-content.show {
+    display: flex;  /* Si la clase 'show' está presente, se muestra */
+    opacity: 1;  /* Se vuelve visible */
+  }
+  
+  /* Estilos de los enlaces */
+  .menu-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .menu-content a:hover {
+    background-color: #444;
+    padding: 5px;
+  }
+  

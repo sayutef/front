@@ -1,0 +1,8 @@
+img {
+    width: 100vw;  /* Ocupa todo el ancho de la pantalla */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    object-fit: cover; /* Cubre todo sin deformarse */
+    position: absolute; /* Posiciona la imagen en toda la pantalla */
+    top: 0;
+    left: 0;
+}
