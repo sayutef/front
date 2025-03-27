@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: '', component: LandingComponent},
   { path: 'heart', component: PageRComponent },
   { path: 'Temperature', component: PageTComponent },
-  { path: 'oxigeno', component: PageOComponent}
+  { path: 'oxigeno', component: PageOComponent},
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({

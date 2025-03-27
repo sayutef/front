@@ -1,0 +1,31 @@
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Hace que el div sea redondo */
+    background-color: transparent; /* Sin color de fondo */
+    border: 20px solid transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    border: 20px solid;
+    border-color: gray red red gray; /* Mitad gris y mitad roja */
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.circle-img {
+    width: 80%; /* Controla el tamaño de la imagen dentro del círculo */
+    height: 80%; /* Controla el tamaño de la imagen dentro del círculo */
+    object-fit: cover; /* Hace que la imagen cubra completamente el área del círculo sin distorsionarse */
+    border-radius: 50%; /* Asegura que la imagen sea circular */
+}

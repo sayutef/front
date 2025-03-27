@@ -1,2 +1,24 @@
-
-<button (click)="login()">sing in</button>
+<div class="login-container">
+    <!-- Parte de texto (izquierda) -->
+    <div class="login-text">
+      <div class="logo-container">
+        <img src="/logo.png" alt="Logo">
+        <h1>WarmHeart</h1>
+      </div>
+      <p>No tienes cuenta? <a routerLink="/acount">Crea una cuenta</a></p>
+      <p>Correo electrónico</p>
+      <input type="email" placeholder="Introduce tu correo">
+  
+      <p>Contraseña</p>
+      <input type="password" placeholder="Introduce tu contraseña">
+  
+      <button>Iniciar sesión</button>
+      
+    </div>
+  
+    <!-- Parte de la imagen (derecha) -->
+    <div class="login-image">
+      <img src="/login.avif" alt="Login Image">
+    </div>
+  </div>
+  
