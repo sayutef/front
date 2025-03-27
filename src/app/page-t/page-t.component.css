@@ -1,82 +1,93 @@
 /* Contenedor principal para centrar la card */
 .container {
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    height: 90vh; /* Altura completa de la pantalla */
-  } 
-  /* Estilos de la tarjeta */
-  .card {
-    width: 750px;
-    height: 450px;
-    background: white;
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-    border: 5px solid #efefef;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 90vh;
+  margin-top: 100px;  /* Altura completa de la pantalla */
 }
-  /* Sección superior (centra los elementos dentro) */
+
+/* Estilos de la tarjeta */
+.card {
+  width: 750px;
+  height: 450px;
+  background: #ffffff; /* Fondo blanco */
+  border-radius: 15px; /* Borde redondeado */
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #ddd; /* Borde más sutil */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efecto de hover */
+}
+
+/* Efecto de hover para resaltar la tarjeta */
+.card:hover {
+  transform: translateY(-10px); /* Eleva la tarjeta un poco */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
+}
+
+/* Sección superior (centra los elementos dentro) */
 .top-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; /* Centra verticalmente */
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centra verticalmente */
+  flex-grow: 1;
 }
 
-  /* Asegura que `app-page-r` no tenga margen extra */
-  app-page-r {
-    margin: 0;
-    padding: 0;
-  }
+/* Asegura que `app-page-r` no tenga margen extra */
+app-page-r {
+  margin: 0;
+  padding: 0;
+}
 
-  /* Texto de temperatura */
-  .temp {
-    font-size: 32px;
-    color: #232121;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
+/* Texto de temperatura */
+.temp {
+  font-size: 32px;
+  color: #232121;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
-  /* Sección inferior izquierda */
-  .info {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 30px; /* Agrega espacio entre los elementos */
-  }
+/* Sección inferior izquierda */
+.info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Ajusta el espacio entre los elementos */
+}
 
-  /* Estilo para el nombre */
-  .name {
-    font-size: 20px;
-    font-weight: bold;
-    color: #2A2A2A;
-    margin: 0;
-  }
+/* Estilo para el nombre */
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2A2A2A;
+  margin: 0;
+}
 
-  /* Estilo para el estado */
-  .status {
-    font-size: 16px;
-    color: #0C538C;
-    font-weight: bold;
-    margin: 0;
+/* Estilo para el estado */
+.status {
+  font-size: 16px;
+  color: #0C538C;
+  font-weight: bold;
+  margin: 0;
 }
 
 .hora {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 5px 10px;
-    border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
 }

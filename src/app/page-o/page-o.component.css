@@ -4,78 +4,95 @@
     justify-content: center;
     align-items: center;
     height: 90vh;
-}
-
-/* Estilos de la tarjeta */
-.card {
+    margin-top: 100px; /* Separación con el encabezado */
+  }
+  
+  /* Estilos de la tarjeta */
+  .card {
     width: 750px;
     height: 450px;
-    background: transparent; /* Fondo transparente */
+    background: white; /* Fondo blanco para mayor contraste */
     border-radius: 20px;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
-    border: 10px solid #dcdcdc; /* Borde más ancho y color negro */
+    border: 2px solid #ddd; /* Borde suave de color gris claro */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-}
-
-/* Sección superior */
-.top-section {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efecto de animación */
+  }
+  
+  /* Efecto hover para resaltar la tarjeta */
+  .card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta */
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15); /* Sombra más intensa al hacer hover */
+  }
+  
+  /* Sección superior */
+  .top-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-}
-
-/* Círculo para el ritmo cardíaco */
-.circle {
+  }
+  
+  /* Círculo para el ritmo cardíaco */
+  .circle {
     width: 200px;
     height: 200px;
-    border-radius: 50%; /* Perfectamente redondo */
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 20px solid #EC044B; /* Borde rojo */
-}
-
-/* Texto dentro del círculo */
-.temp {
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out; /* Efecto de animación */
+  }
+  
+  /* Efecto hover en el círculo */
+  .circle:hover {
+    transform: scale(1.1); /* Hace que el círculo crezca al pasar el mouse */
+  }
+  
+  /* Texto dentro del círculo */
+  .temp {
     font-size: 32px;
     color: black; /* Texto negro */
     font-weight: bold;
     margin: 0;
-}
-
-/* Información adicional */
-.info {
+  }
+  
+  /* Información adicional */
+  .info {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 20px;
+    left: 20px;
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-}
-
-/* Estilos adicionales */
-.name {
+    gap: 20px; /* Separación entre los elementos */
+  }
+  
+  /* Estilos adicionales */
+  .name {
     font-size: 20px;
     font-weight: bold;
     color: #2A2A2A;
     margin: 0;
-}
-
-.status {
+  }
+  
+  .status {
     font-size: 16px;
     color: #0C538C;
     font-weight: bold;
     margin: 0;
-}
-
-.hora {
+  }
+  
+  .hora {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -85,4 +102,22 @@
     background: rgba(255, 255, 255, 0.8);
     padding: 5px 10px;
     border-radius: 5px;
-}
+  }
+  
+  /* Animación para el borde y fondo del círculo */
+  .circle:hover {
+    border-color: #FF1C50; /* Cambio en el borde al hacer hover */
+  }
+  
+  /* Agregar transición suave para el texto */
+  .temp,
+  .name,
+  .status {
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para el texto */
+  }
+  
+  /* Cambiar color del texto al pasar el mouse */
+  .card:hover .temp {
+    color: #FF1C50; /* Cambio de color al hacer hover */
+  }
+  
