@@ -5,6 +5,7 @@ import { PageRComponent } from './page-r/page-r.component';
 import { PageTComponent } from './page-t/page-t.component';
 import { LandingComponent } from './landing/landing.component';
 import { PageOComponent } from './page-o/page-o.component';
+import { PageEComponent } from './page-e/page-e.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'Temperature', component: PageTComponent },
   { path: 'oxigeno', component: PageOComponent},
   { path: 'login', component: LoginComponent },
+  { path: 'acount', component: PageEComponent }
 ];
 
 @NgModule({
